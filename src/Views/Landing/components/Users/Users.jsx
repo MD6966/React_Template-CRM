@@ -48,7 +48,7 @@ const Users = () => {
             sortable: true,
             render: (row) => (
                 <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 rounded-full bg-gradient-to-b from-indigo-500 to-purple-600 flex items-center justify-center text-white font-semibold text-sm">
+                    <div className="w-10 h-10 rounded-full bg-gradient-to-b from-primarycolor to-secondarycolor flex items-center justify-center text-white font-semibold text-sm">
                         {row.initial}
                     </div>
                     <div>
@@ -78,7 +78,7 @@ const Users = () => {
             render: (row) => (
                 <span className={`px-4 py-1.5 rounded-md text-sm font-medium ${row.role === 'Admin'
                     ? 'bg-red-100 dark:bg-red-900/30 text-red-700 dark:text-red-400'
-                    : 'bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-400'
+                    : 'bg-primarycolor/10 dark:bg-primarycolor/30 text-primarycolor dark:text-secondarycolor'
                     }`}>
                     {row.role}
                 </span>
@@ -117,7 +117,7 @@ const Users = () => {
                     <div className="flex items-center gap-3">
                         <button
                             onClick={handleAddUser}
-                            className="px-6 py-2.5 bg-indigo-600 hover:bg-indigo-700 text-white rounded-lg transition-all duration-300 font-semibold flex items-center gap-2 shadow-md hover:shadow-lg"
+                            className="px-6 py-2.5 bg-primarycolor hover:bg-secondarycolor text-white rounded-lg transition-all duration-300 font-semibold flex items-center gap-2 shadow-md hover:shadow-lg"
                         >
                             <span className="text-xl">+</span>
                             Add User
