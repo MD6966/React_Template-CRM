@@ -1,0 +1,16 @@
+@config "../tailwind.config.js";
+@import "tailwindcss";
+
+
+@theme {
+ --text-primary: 79px;
+ --color-primarycolor:#0d6dbf;
+ --color-secondarycolor:#01c0eb;
+ --font-barlow:'Barlow', 'sans-serif';
+}
+
+@theme dark {
+  --color-primarycolor: #0a4d8b;      
+  --color-secondarycolor: #018fb0;
+  --text-primary: 79px;
+}
